@@ -1,7 +1,7 @@
 @import url(./header.css);
 @import url(./footer.css);
 
-#home {
+#one {
     position: relative;
     height: 100vh;
     width: 100%;
@@ -10,7 +10,7 @@
     background-position: right;
     
 }
-#home > img{
+#one > img{
     position: absolute;
     background: linear-gradient(270deg, #131E24 3.77%, rgba(0, 0, 0, 0) 48.29%), url(kir-simakov-1y5PkTZOMbQ-unsplash.jpg);
     right: 0;
@@ -18,7 +18,7 @@
     height: 100%;
     z-index: 0;
 }
-#home > section {
+#one > section {
     padding: 3rem 0 2rem;
     position: absolute;
     height: 100%;
@@ -27,29 +27,29 @@
     grid-template-rows: 3fr 1fr 1fr;
     row-gap: 2rem;
 }
-#home > section > h1 {
+#one > section > h1 {
     color: white;
     font-size: 150px;
     line-height: 120px;
 }
 
-#home > section > p, #home > section p * {
+#one > section > p, #one > section p * {
     color: white;
     font-family: myFont-light;
     font-size: 45px;
     line-height: 40.5px;
 }
 
-#home > section > p > span {
+#one > section > p > span {
     display: block;
 }
 
-#home > section > .buttons {
+#one > section > .buttons {
     display: flex;
     height: 56px;
     gap: 2rem;
 }
-#home > section > .buttons * {
+#one > section > .buttons * {
     border: none;
     color: white;
     font-family: second-font-light;
@@ -59,11 +59,142 @@
     align-items: center;
 }
 
-#home > section > .buttons > button:last-child {
+#one > section > .buttons > button:last-child {
     background-color: #084A64;;
 }
 
-#home > section > .buttons > button:first-child {
+#one > section > .buttons > button:first-child {
     background-color: var(--active);
 }
 
+
+
+#two {
+    padding: 4rem 160px;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    gap: 4rem;
+}
+#two > section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, minmax(250px, 1fr));
+}
+
+#two > section > div{
+    display: flex;
+    flex-direction: column;
+}
+#two > section:last-child > div:last-child {
+    align-items: end;
+}
+#two > section > div h2{ 
+    position: relative;
+    font-size: 42px;
+    line-height: 42px;
+    width: 75%;
+    text-transform: uppercase;
+    padding-left: 1.25rem;
+    color: var(--font-main-color);
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+#two > section > div h2::before{ 
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: .5rem;
+    background-color: var(--optional);
+}
+
+#two > section > div p{
+    line-height: 34px;
+    font-family: myFont-light;
+    width: 80%;
+} 
+
+#two > section > figure {
+    position: relative;
+    display: flex;
+}
+#two > section > figure * {
+    position: absolute;
+    bottom: 0;
+    object-fit: cover;
+    height : 210px; width : 375px;
+}
+#two > section > figure .bg-temp {
+    background-color: var(--header-footer);
+    width : 350px;
+    right: 0;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#two > section > figure .bg-grid {
+    top: 0;
+    z-index: 0;
+    height : calc(210px * 1.4);
+    width: 450px;  
+}
+
+#two > section > figure img:first-child {
+    left: 10rem;
+}
+#two > section:first-child > figure .bg-grid {
+    left: 7rem;
+}
+
+
+#two > section:last-child > figure img:first-child {
+    left: 4rem;
+}
+#two > section:last-child > figure .bg-temp {
+    left: 0;
+}
+
+#two > section:last-child > figure .bg-grid {
+    right: 7rem !important;
+}
+
+
+
+
+#three {
+    padding: 4rem 160px;
+    display: flex;
+    justify-content: space-between;
+}
+#three > div {
+    height: 415px; flex-basis: 356px;
+    background-color: rgba(244, 244, 244, 1);
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.55);
+    padding: 3rem 1.75rem 1rem;
+    color: var(--font-main-color);
+}
+#three > div > i {
+    position: relative;
+    font-size: 50px;
+}
+#three > div > i::after {
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-color: var(--active);
+}
+#three > div > h2 {
+    font-family: myFont;
+    font-size: 43px;
+}
+#three > div > p{
+    font-family: myFont-light;
+}
+
+#three > div:nth-child(even) {
+    background-color: var(--header-footer);
+}
+#three > div:nth-child(even) > h2, #three > div:nth-child(even) > p {
+    color: white;
+}

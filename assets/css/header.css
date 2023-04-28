@@ -25,7 +25,7 @@ header {
     height: 55px;
 }
 #blue{
-    color: rgba(28, 75, 243, 1);
+    color: var(--optional);
     display: block;
 }
 .logo h2:nth-of-type(1){

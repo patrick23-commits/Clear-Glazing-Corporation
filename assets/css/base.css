@@ -1,6 +1,8 @@
 :root {
     --active : rgba(255, 108, 0, 1);
     --header-footer : rgba(5, 30, 40, 1);
+    --optional : rgba(28, 75, 243, 1);
+    --font-main-color : rgba(5, 30, 40, 1);
 }
 @font-face {
     font-family: myFont;
@@ -24,6 +26,7 @@
 }
 *::before, *::after {
     position: absolute;
-    inset: 0;
+    bottom: 0;
+    left: 0;
 }
 
