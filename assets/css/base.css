@@ -1,0 +1,29 @@
+:root {
+    --active : rgba(255, 108, 0, 1);
+    --header-footer : rgba(5, 30, 40, 1);
+}
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/SairaCondensed-Bold.ttf);
+}
+
+@font-face {
+    font-family: myFont-light;
+    src: url(../fonts/SairaCondensed-Light.ttf);
+}
+
+@font-face {
+    font-family: second-font-light;
+    src: url(../fonts/Sarabun-Light.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: myFont;
+}
+*::before, *::after {
+    position: absolute;
+    inset: 0;
+}
+

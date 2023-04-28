@@ -1,0 +1,56 @@
+@import url(./base.css);
+
+
+/* HEADER */
+header {
+    background-color: var(--header-footer);
+    display: flex;
+    justify-content: space-between;
+    padding: 22px  160px;
+    align-items: center;
+    height: 98px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo > img {
+    height: 47.4px; width: 50px;
+}
+.logo h2 {
+    font-size: 20px !important;
+    gap: 0;
+    line-height: 26px !important;
+    height: 55px;
+}
+#blue{
+    color: rgba(28, 75, 243, 1);
+    display: block;
+}
+.logo h2:nth-of-type(1){
+    color: white !important;
+}   
+.active {
+    color: var(--active);
+}
+
+nav {
+    height: 100%;
+}
+nav > ul > li{
+    display: inline-block;
+}
+ul {
+    gap: 3rem;
+    display: flex;
+    align-items: start;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* END HEADER */
