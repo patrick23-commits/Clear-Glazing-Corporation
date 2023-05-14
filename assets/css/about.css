@@ -166,9 +166,9 @@ section#testimonials > #reviews  > div > .stars {
 }
 
 section#testimonials > #reviews  > div > .stars svg path{
-    fill: var(--color);
-
+    fill: gray;
 }
+
 section#testimonials  #professionals {
     display: flex;
     gap: 2rem;
@@ -196,7 +196,8 @@ section#testimonials  #professionals figure  > img{
     object-fit: cover;
     height: 150px;
     width: 150px;
-
+    border-radius: 50%;
+    object-position: right;
 }
 
 section#testimonials  #professionals figure figcaption > p {
