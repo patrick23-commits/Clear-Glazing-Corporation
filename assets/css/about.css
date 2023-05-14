@@ -1,0 +1,308 @@
+* {
+    font-family: SairaCondensed-Bold;
+}
+section#about-bg {
+    transform: translateY(-5px);
+    background-image: url(../images/about-bg/about-bg/279378784_5548749455137845_1607500462376738151_n_2_4x.webp);
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section#about-bg  > * {
+    color: white;
+}
+
+section#about-bg  > h2 {
+    position: relative;
+    font-size: 3rem;
+    padding-left: 1rem;
+}
+
+section#about-bg  > h1 {
+    font-size: 4rem;
+    text-align: center;
+    line-height: 4rem;
+    text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.67);
+}
+section#about-bg  > h2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 7px;
+    height: 100%;
+    background-color: var(--active);
+}
+
+section#about-bg > p {
+    font-family: SairaCondensed-Medium;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+section#about-clear-glazing-company {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 5rem 0;
+}
+
+section#about-clear-glazing-company > section{
+    width: 80%;
+    display: grid;
+    place-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+}
+section#about-clear-glazing-company > section h3{
+    color: var(--active);
+    font-family: SairaCondensed-Light;
+ }
+
+section#about-clear-glazing-company > section h2 {
+    font-size: 2rem;
+}
+section#about-clear-glazing-company > section img {
+    height: 250px; width: 450px;
+    z-index: 100;
+    position: relative;
+}
+
+section#about-clear-glazing-company > section p {
+    text-align: justify;
+    width: 55ch;
+    font-family: SairaCondensed-Light;
+}
+section#about-clear-glazing-company > section > figure {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+section#about-clear-glazing-company > section > figure::before{
+    content: " ";
+    background-color: #374B53;
+    top: 0;
+    height: 60%; width: 100px;
+    top: 40%;
+    transform: translateY(-50%) translateX(1.5rem);
+    z-index: 0;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.55);
+}
+section#about-clear-glazing-company > section > figure::after{
+    content: " ";
+    background-color: #374B53;
+    left: 100%;
+    height: 95px; width: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-150%);
+    z-index: 0;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.55);
+}
+
+
+section#testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+section#testimonials > h3{
+    color: var(--active);
+    font-family: SairaCondensed-Light;
+}
+section#testimonials > h2{
+    font-size: 3rem;
+    text-align: center;
+    line-height: 3rem;
+}
+
+
+section#testimonials > #reviews {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    width: 75%;
+    
+}
+section#testimonials > #reviews  > div > p{
+    font-family: SairaCondensed-Light;
+}
+section#testimonials > #reviews  div > span{
+    font-family: SairaCondensed-Bold;
+    font-size: 4rem;
+    position: absolute;
+    background-color: var(--color);
+    border-radius: 50%;
+    width: 50px; height: 50px;
+    line-height: 5rem;
+    text-align: center;
+    top: 0;
+    left: 2rem;
+    transform: translateY(-50%);
+    color: white;
+}
+section#testimonials > #reviews  > div{
+    box-shadow: 0px 26px 110px rgba(0, 0, 0, 0.2);
+    position: relative;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, minmax(400px, 500px), 1fr);
+    row-gap: 2rem;
+}
+
+section#testimonials > #reviews  > div > .stars {
+    border-top: 1px solid black;
+    width: 50%;
+    padding-top: 1rem;
+}
+
+section#testimonials > #reviews  > div > .stars svg path{
+    fill: var(--color);
+
+}
+section#testimonials  #professionals {
+    display: flex;
+    gap: 2rem;
+    transform: translateY(50%);
+    z-index: 100;
+}
+
+section#testimonials  #professionals figure {
+    width: 300px;
+    height: 300px;
+    box-shadow: 7px 26px 110px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 7px;
+    z-index: 100;
+    background-color: white;
+}
+
+section#testimonials  #professionals figure  > img{ 
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+
+}
+
+section#testimonials  #professionals figure figcaption > p {
+    font-family:  SairaCondensed-Light;
+}
+
+section#testimonials  > #professionals-descriptions {
+    display: flex;
+    background-color: var(--font-main-color);
+    gap: 2rem;
+    justify-content: center;
+    padding-top: 200px;
+    padding-bottom: 3rem;
+    z-index: 10;
+}
+section#testimonials > #professionals-descriptions > div  p {
+    font-family:  SairaCondensed-Light;
+}
+section#testimonials  > #professionals-descriptions > div {
+    background-color: var(--bg);
+    flex-basis: 30ch;
+    padding: 2rem;
+
+}
+section#testimonials > #professionals-descriptions > div:first-child {
+    color: black;
+}
+section#testimonials  > #professionals-descriptions > div:not(:first-child) {
+    color: white;
+}
+
+section#vision-and-mission {
+    padding: 150px 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+section#vision-and-mission img{
+    height: 300px;
+    width: 450px;
+}
+
+section#vision-and-mission > section {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    gap: 2rem;
+}
+section#vision-and-mission section > * {
+    flex-basis: 50%;
+}
+section#vision-and-mission section:first-child {
+    flex-direction: row-reverse;
+}
+
+section#vision-and-mission section > *  > h2 {
+    font-family: SairaCondensed-Bold;
+    font-size: 3rem;
+}
+section#vision-and-mission section > *  > p {
+    width: 80%;
+    font-family: SairaCondensed-Light;
+}
+section#vision-and-mission section > figure {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    
+}
+section#vision-and-mission section > figure > img {
+    z-index: 100;
+}
+section#vision-and-mission section > figure::before {
+    content: "";
+    top: 0;
+    width: 150px;
+    height: 200px;
+    background-color: var(--active);
+    transform: translateY(-50px);
+    z-index: 0;
+    left: 0;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.55);
+}
+
+section#vision-and-mission section > figure::after {
+    content: "";
+    top: 50px;
+    width: 150px;
+    height: 200px;
+    background-color: var(--active);
+    z-index: 0;
+    left: 100%;
+    transform: translateX(-100%);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.55);
+}
+
+section#vision-and-mission section > div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+section#vision-and-mission section > div :first-child {
+    align-self: flex-start;
+} 

@@ -15,6 +15,11 @@
 }
 
 @font-face {
+    font-family: SairaCondensed-Medium;
+    src: url(../fonts/SairaCondensed-Medium.ttf);
+}
+
+@font-face {
     font-family: Sarabun-Light;
     src: url(../fonts/Sarabun-Light.ttf);
 }

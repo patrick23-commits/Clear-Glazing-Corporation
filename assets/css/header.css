@@ -55,4 +55,19 @@ a {
     font-family: SairaCondensed-Bold;
 }
 
+.blue{
+    color: var(--optional);
+    display: block;
+} 
+
+body::-webkit-scrollbar {
+    background-color: transparent;
+    width: 5px;
+}
+body::-webkit-scrollbar-thumb {
+    background-color: var(--font-main-color);
+}
+body {
+    scroll-behavior: smooth;
+}
 /* END HEADER */
