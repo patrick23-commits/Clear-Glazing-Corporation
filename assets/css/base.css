@@ -5,18 +5,27 @@
     --font-main-color : rgba(5, 30, 40, 1);
 }
 @font-face {
-    font-family: myFont;
+    font-family: SairaCondensed-Bold;
     src: url(../fonts/SairaCondensed-Bold.ttf);
 }
 
 @font-face {
-    font-family: myFont-light;
+    font-family: SairaCondensed-Light;
     src: url(../fonts/SairaCondensed-Light.ttf);
 }
 
 @font-face {
-    font-family: second-font-light;
+    font-family: Sarabun-Light;
     src: url(../fonts/Sarabun-Light.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../fonts/Roboto-Light.ttf);
 }
 * {
     padding: 0;

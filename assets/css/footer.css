@@ -10,7 +10,7 @@ footer {
 }
 
 footer a {
-    font-family: myFont-light;
+    font-family: SairaCondensed-Light;
 }
 footer nav {
     height: fit-content;
@@ -19,6 +19,6 @@ footer > .icons > svg {
     margin: .25rem;
 }
 footer p {
-    font-family: myFont-light;
+    font-family: SairaCondensed-Light;
     color: white;
 }

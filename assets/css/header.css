@@ -19,15 +19,16 @@ header {
     height: 47.4px; width: 50px;
 }
 .logo h2 {
+   
     font-size: 20px !important;
     gap: 0;
     line-height: 26px !important;
     height: 55px;
 }
-#blue{
-    color: var(--optional);
-    display: block;
+.logo h2 , .logo h2 * {
+    font-family: SairaCondensed-Bold;
 }
+
 .logo h2:nth-of-type(1){
     color: white !important;
 }   
@@ -51,6 +52,7 @@ ul {
 a {
     text-decoration: none;
     color: white;
+    font-family: SairaCondensed-Bold;
 }
 
 /* END HEADER */
