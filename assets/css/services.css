@@ -1,0 +1,145 @@
+* {
+    font-family: SairaCondensed-Bold;
+}
+section#services-bg {
+    height: 258px;
+    background-image: url(../images/services_bg.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+section#services-bg h1 {
+    position: relative;
+    color: white;
+    padding-left: 10px;
+    transform: translateX(75%) translateY(-100%);
+    font-size: 50px;
+    filter: drop-shadow(-3px -3px black);
+    line-height: 50px;
+}
+
+section#services-bg h1::before {
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: var(--active);
+    top: 0;
+}
+
+section#thumbnail {
+    display: flex;
+    gap: 50px;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/services_thumbnail.webp);
+}
+
+section#thumbnail button {
+    background-color: transparent;
+    border: none;
+    flex-grow: 2;
+    justify-content: end;
+    align-items: center;
+}
+section#thumbnail #descriptions {
+    flex-grow: 2;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section#thumbnail > * {
+    display: flex;
+}
+section#thumbnail #descriptions *{
+    color: white;
+    font-family: Roboto-Bold;
+}
+section#thumbnail #descriptions h3{
+    color: var(--active);
+    
+}
+section#thumbnail #descriptions p, section#thumbnail #descriptions h3{
+    font-family: SairaCondensed-Light;
+}
+section#thumbnail #descriptions p {
+    width: 100ch;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+section#thumbnail #descriptions h2 {
+    font-size: 80px;
+}
+
+section#services-products {
+    padding: 50px 0;
+    margin: 0 auto;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+}
+section#services-products img{
+    height: 300px;
+    width: 450px;
+    object-fit: cover;
+}
+section#services-products > figure figcaption {
+    width: 450px;   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+section#services-products > figure {
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+}
+
+section#services-products > figure > * {
+    flex-grow: 1;
+}
+section#services-products > figure:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+section#services-products > figure figcaption h3 {
+    color: var(--active);
+    font-family: SairaCondensed-Medium;
+}
+
+section#services-products > figure figcaption h3, section#services-products > figure figcaption h2 {
+    text-transform: uppercase;
+}
+section#services-products > figure figcaption h2 {
+    font-size: 35px;
+    line-height: 35px;
+    color: var(--font-main-color);
+    position: relative;
+    width: fit-content;
+    padding-bottom: 10px;
+    font-family: Roboto-Bold;
+}
+section#services-products > figure figcaption h2:hover {
+    cursor: pointer;
+}
+section#services-products > figure figcaption h2:hover::after {
+    width: 50%;
+}
+section#services-products > figure figcaption h2::after {
+    bottom: 0;
+    content: "";
+    width: 0%;
+    height: 5px;
+    background-color: var(--active);
+    transition: all 75ms 25ms ease-in;
+}
+
+section#services-products > figure figcaption p {
+    font-family: SairaCondensed-Light;
+}

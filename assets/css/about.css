@@ -22,6 +22,8 @@ section#about-bg  > h2 {
     position: relative;
     font-size: 3rem;
     padding-left: 1rem;
+    line-height: 3rem;
+    filter: drop-shadow(3px -3px black);
 }
 
 section#about-bg  > h1 {
