@@ -307,3 +307,51 @@ section#vision-and-mission section > div {
 section#vision-and-mission section > div :first-child {
     align-self: flex-start;
 } 
+
+
+
+section#ceo-quote {
+    background-image: url(../images/bg_ceo.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+}
+
+section#ceo-quote img{
+    height: 300px; width: 300px;
+}
+section#ceo-quote h2{
+    font-family: Trirong-ExtraLight-Italic;
+    font-size: 40px;
+    line-height: 55px;
+}
+section#ceo-quote div >  p {
+    font-family: SairaCondensed-Light;
+}
+section#ceo-quote div > p {
+    width: 40ch; 
+}
+section#ceo-quote div > p:last-child {
+    font-weight: bold;
+}
+section#ceo-quote > div {
+    display: flex;
+    justify-content: center;
+}
+section#ceo-quote > div:last-child  {
+    flex-direction: column;
+}
+section#ceo-quote > div:first-child > div {
+    background-image: url(../images/bd_profile.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    align-items: flex-end;
+}

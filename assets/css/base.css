@@ -4,6 +4,11 @@
     --optional : rgba(28, 75, 243, 1);
     --font-main-color : rgba(5, 30, 40, 1);
 }
+
+@font-face {
+    font-family: Trirong-ExtraLight-Italic;
+    src: url(../fonts/Trirong-ExtraLightItalic.ttf);
+}
 @font-face {
     font-family: SairaCondensed-Bold;
     src: url(../fonts/SairaCondensed-Bold.ttf);
@@ -44,3 +49,15 @@
     left: 0;
 }
 
+
+
+::-webkit-scrollbar{
+    background-color: transparent;
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--font-main-color);
+}
+body {
+    scroll-behavior: smooth;
+}
