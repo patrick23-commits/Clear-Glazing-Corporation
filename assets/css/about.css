@@ -224,6 +224,7 @@ section#testimonials  > #professionals-descriptions {
     padding-top: 200px;
     padding-bottom: 3rem;
     z-index: 10;
+    flex-wrap: wrap;
 }
 section#testimonials > #professionals-descriptions > div  p {
     font-family:  SairaCondensed-Light;
@@ -247,7 +248,7 @@ section#vision-and-mission {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    row-gap: 5rem;
 }
 section#vision-and-mission img{
     height: 300px;
@@ -261,7 +262,7 @@ section#vision-and-mission > section {
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
-    gap: 5rem;
+    column-gap: 5rem;
 }
 section#vision-and-mission section > * {
     flex-basis: 50%;
@@ -333,13 +334,16 @@ section#ceo-quote {
     background-image: url(../images/bg_ceo.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    justify-content: center;
     padding: 50px;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
 section#ceo-quote img{
-    height: 300px; width: 300px;
+    width: 100%;
+    aspect-ratio: 1;
 }
 section#ceo-quote h2{
     font-family: Trirong-ExtraLight-Italic;
@@ -358,19 +362,24 @@ section#ceo-quote div > p:last-child {
 section#ceo-quote > div {
     display: flex;
     justify-content: center;
+    flex-grow: 0;
+    flex-basis: 30%;
 }
 section#ceo-quote > div:last-child  {
     flex-direction: column;
+    flex-grow: 2;
 }
 section#ceo-quote > div:first-child > div {
     background-image: url(../images/bd_profile.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    width: 350px;
-    height: 350px;
-    display: flex;
-    justify-content: center;
+    width: 75%;
+    min-width: 250px;
+    min-height: 250px;
     border-radius: 50%;
     overflow: hidden;
-    align-items: flex-end;
+    align-self: center;
+
+    display: flex;
+    align-items: end;
 }

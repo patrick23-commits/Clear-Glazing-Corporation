@@ -90,6 +90,7 @@
     flex-basis: 400px;
     flex-grow: 1;
 }
+
 #two > section:last-child {
     flex-direction: row-reverse;
 }
@@ -208,7 +209,7 @@
 }
 
 #services > div {
-    height: 415px; flex-basis: 356px;
+    height: clamp(fit-content, 600px, 100%); flex-basis: 356px;
     background-color: rgba(244, 244, 244, 1);
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.55);
     padding: 3rem 1.75rem 1rem;
@@ -248,13 +249,14 @@
 
 
 #products {
-    padding: 5rem 0;
+    padding: 5rem 50px;
     height: fit-content;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
     grid-auto-rows: 450px;
     place-content: center;
-    gap: 3.75rem;
+    column-gap: 100px;
+    row-gap: 50px;
     
 }
 #products > div {

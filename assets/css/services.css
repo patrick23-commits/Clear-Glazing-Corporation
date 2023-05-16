@@ -5,17 +5,20 @@ section#services-bg {
     height: 258px;
     background-image: url(../images/services_bg.webp);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     display: flex;
     align-items: flex-end;
+    background-position: center;
+    position: relative;
 }
 
 section#services-bg h1 {
-    position: relative;
+    position: absolute;
     color: white;
     padding-left: 10px;
-    transform: translateX(75%) translateY(-100%);
-    font-size: 50px;
+    left: 10%;
+    transform: translateY(-100%);
+    font-size: clamp(30px, 10vw, 50px);
     filter: drop-shadow(-3px -3px black);
     line-height: 50px;
 }
