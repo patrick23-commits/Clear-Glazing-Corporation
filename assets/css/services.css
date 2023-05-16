@@ -86,6 +86,7 @@ section#services-products {
 section#services-products img{
     height: 300px;
     width: 450px;
+    min-width: 200px;
     object-fit: cover;
 }
 section#services-products > figure figcaption {

@@ -72,6 +72,7 @@
 
 
 #two {
+    margin-top: 100px;
     padding: 4rem 160px;
     height: 100%;
     display: grid;
@@ -79,8 +80,18 @@
     row-gap: 100px;
 }
 #two > section {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 50%));
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 100px;
+    flex-direction: row;
+}
+#two > section > * {
+    flex-basis: 400px;
+    flex-grow: 1;
+}
+#two > section:last-child {
+    flex-direction: row-reverse;
 }
 #two > section > div{
     display: flex;
@@ -191,14 +202,19 @@
 #services {
     padding: 4rem 160px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
 }
+
 #services > div {
     height: 415px; flex-basis: 356px;
     background-color: rgba(244, 244, 244, 1);
     box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.55);
     padding: 3rem 1.75rem 1rem;
     color: var(--font-main-color);
+    min-width: 300px;
+    
 }
 #services > div > i {
     position: relative;
