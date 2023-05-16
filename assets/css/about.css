@@ -55,13 +55,14 @@ section#about-clear-glazing-company {
 }
 
 section#about-clear-glazing-company > section{
-    width: 80%;
-    min-width: 500px;
+    max-width: 80%;
+    min-width: 350px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     flex-direction: row;
     column-gap: 2rem;
+    padding: 50px 0;
 }
 section#about-clear-glazing-company > section:first-child {
     flex-direction: row-reverse;
@@ -77,7 +78,6 @@ section#about-clear-glazing-company > section h2 {
 }
 section#about-clear-glazing-company > section img {
     width: 70%;
-    min-width: 200px;
     max-width: 450px;
     aspect-ratio: 6 / 4;
     object-fit: contain;
@@ -87,22 +87,29 @@ section#about-clear-glazing-company > section img {
 
 section#about-clear-glazing-company > section p {
     text-align: justify;
-    width: 55ch;
     font-family: SairaCondensed-Light;
+    
 }
 section#about-clear-glazing-company > section > figure {
     position: relative;
     display: flex;
     justify-content: center;
+    min-width: fit-content;
+    flex-basis: fit-content;
+    
+}
+section#about-clear-glazing-company > section > div {
+    flex-basis: 40%;
+    min-width: 300px;
 }
 
 section#about-clear-glazing-company > section > figure::before{
     content: " ";
     background-color: #374B53;
-    top: 0;
-    height: 60%; width: 50%;
+    height: 60%; width: 45%;
     top: 40%;
-    transform: translateY(-50%) translateX(1.5rem);
+    left: 50%;
+    transform: translateY(-50%) translateX(-100%);
     z-index: 0;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.55);
 }
@@ -110,10 +117,9 @@ section#about-clear-glazing-company > section > figure::after{
     left: 50%;
     content: " ";
     background-color: #374B53;
-    right: 0;
-    height: 95px; width: 20%;
+    height: 95px; width: 45%;
     top: 50%;
-    transform: translateY(-50%) translateX(100%);
+    transform: translateY(-50%) ;
     z-index: 0;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.55);
 }
@@ -250,19 +256,17 @@ section#vision-and-mission {
     align-items: center;
     row-gap: 5rem;
 }
-section#vision-and-mission img{
-    height: 300px;
-    width: 450px;
-}
+
 
 section#vision-and-mission > section {
     width: 75%;
-    min-width: 500px;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
     column-gap: 5rem;
+    
+    min-width: 300px;
 }
 section#vision-and-mission section > * {
     flex-basis: 50%;
@@ -288,7 +292,7 @@ section#vision-and-mission section > figure {
 section#vision-and-mission section > figure > img {
     width: 450px;
     min-width: 300px;
-    max-width: 400px;
+    max-width: 100%;
     object-fit: contain;
     aspect-ratio: 6 / 4;
     z-index: 100;
@@ -296,7 +300,7 @@ section#vision-and-mission section > figure > img {
 section#vision-and-mission section > figure::before {
     content: "";
     top: 0;
-    width: 150px;
+    width: 30%;
     height: 200px;
     background-color: var(--active);
     transform: translateY(-50px) translateX(-40%);
@@ -308,8 +312,8 @@ section#vision-and-mission section > figure::before {
 section#vision-and-mission section > figure::after {
     content: "";
     top: 50px;
-    width: 150px;
-    height: 200px;
+    width: 20%;
+    height: 50%;
     background-color: var(--active);
     z-index: 0;
     left: 100%;
