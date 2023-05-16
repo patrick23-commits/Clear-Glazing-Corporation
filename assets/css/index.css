@@ -76,14 +76,12 @@
     height: 100%;
     display: grid;
     place-content: center;
-    gap: 4rem;
+    row-gap: 100px;
 }
 #two > section {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 50%));
 }
-
 #two > section > div{
     display: flex;
     flex-direction: column;
@@ -125,23 +123,27 @@
     position: relative;
     display: flex;
     justify-content: center !important;
-    align-items: center;
+    align-items: center !important;
     position: relative;
 }
-#two > section:first-child > figure::before {
-    left: 0; 
-    transform: translateX(20%);
-}
 #two > section:first-child > figure::after{ 
-    transform: translateX(-120%);
-    left: 100%;
+    left: 50%;
+    transform: translateX(-30%) translateY(-70%);
+}
+
+#two > section:first-child > figure::before{
+    left: 50%;
+    transform: translateX(-70%) translateY(-50%);
 }
 #two > section > figure::before {
     position: absolute;
     content: "";
-    height: 300px; width : 400px;
-    top: 30px !important;
-    left: 100%; transform: translateX(-120%);
+    width: 60%;
+    min-width: 300px;
+    aspect-ratio: 8 / 7;
+    object-fit: cover;
+    top: 50%;
+    left: 50%; transform: translateX(-30%) translateY(-50%);
     background-image: url(../images/black_and_white_photographic_accounting_service_website_1_2/black_and_white_photographic_accounting_service_website_1_2_4x.webp);
     background-size: cover;
     z-index: 50;
@@ -149,17 +151,21 @@
 
 #two > section > figure::after{ 
     content: "";
-    top: 0;
+    top: 50%;
     z-index: 75;
-    height: 200px; width : 350px;
+    width : 60%;
+    min-width: 300px;
+    aspect-ratio: 6 / 4;
     background-color: var(--font-main-color);
-    left: 10%;
+    left: 50%;
+    transform: translateY(-70%) translateX(-70%);
 }
 
 #two > section > figure > img {
-    bottom: 0;
     object-fit: cover;
-    height : 210px; width : 375px;
+    width : 60%;
+    min-width: 300px;
+    aspect-ratio: 6 / 4;
 }
 
 
@@ -229,8 +235,8 @@
     padding: 5rem 0;
     height: fit-content;
     display: grid;
-    grid-template-columns: repeat(3, minmax(250px, 300px));
-    grid-template-rows: repeat(2, minmaX(250px, 400px));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 400px));
+    grid-auto-rows: 450px;
     place-content: center;
     gap: 3.75rem;
     

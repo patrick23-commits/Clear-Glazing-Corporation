@@ -56,11 +56,17 @@ section#about-clear-glazing-company {
 
 section#about-clear-glazing-company > section{
     width: 80%;
-    display: grid;
-    place-content: center;
-    grid-template-columns: repeat(2, 1fr);
+    min-width: 500px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
     column-gap: 2rem;
 }
+section#about-clear-glazing-company > section:first-child {
+    flex-direction: row-reverse;
+}
+
 section#about-clear-glazing-company > section h3{
     color: var(--active);
     font-family: SairaCondensed-Light;
@@ -70,7 +76,11 @@ section#about-clear-glazing-company > section h2 {
     font-size: 2rem;
 }
 section#about-clear-glazing-company > section img {
-    height: 250px; width: 450px;
+    width: 70%;
+    min-width: 200px;
+    max-width: 450px;
+    aspect-ratio: 6 / 4;
+    object-fit: contain;
     z-index: 100;
     position: relative;
 }
@@ -90,20 +100,20 @@ section#about-clear-glazing-company > section > figure::before{
     content: " ";
     background-color: #374B53;
     top: 0;
-    height: 60%; width: 100px;
+    height: 60%; width: 50%;
     top: 40%;
     transform: translateY(-50%) translateX(1.5rem);
     z-index: 0;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.55);
 }
 section#about-clear-glazing-company > section > figure::after{
+    left: 50%;
     content: " ";
     background-color: #374B53;
-    left: 100%;
-    height: 95px; width: 100px;
+    right: 0;
+    height: 95px; width: 20%;
     top: 50%;
-    transform: translateY(-50%);
-    transform: translateX(-150%);
+    transform: translateY(-50%) translateX(100%);
     z-index: 0;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.55);
 }
@@ -129,7 +139,7 @@ section#testimonials > h2{
 
 section#testimonials > #reviews {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 2rem;
     width: 75%;
     
@@ -246,11 +256,12 @@ section#vision-and-mission img{
 
 section#vision-and-mission > section {
     width: 75%;
+    min-width: 500px;
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin-bottom: 50px;
-
-    gap: 2rem;
+    gap: 5rem;
 }
 section#vision-and-mission section > * {
     flex-basis: 50%;
@@ -271,9 +282,14 @@ section#vision-and-mission section > figure {
     display: flex;
     justify-content: center;
     position: relative;
-    
+    flex-basis: fit-content;
 }
 section#vision-and-mission section > figure > img {
+    width: 450px;
+    min-width: 300px;
+    max-width: 400px;
+    object-fit: contain;
+    aspect-ratio: 6 / 4;
     z-index: 100;
 }
 section#vision-and-mission section > figure::before {
@@ -282,7 +298,7 @@ section#vision-and-mission section > figure::before {
     width: 150px;
     height: 200px;
     background-color: var(--active);
-    transform: translateY(-50px);
+    transform: translateY(-50px) translateX(-40%);
     z-index: 0;
     left: 0;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.55);
@@ -296,7 +312,7 @@ section#vision-and-mission section > figure::after {
     background-color: var(--active);
     z-index: 0;
     left: 100%;
-    transform: translateX(-100%);
+    transform: translateX(-60%);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.55);
 }
 
@@ -304,6 +320,7 @@ section#vision-and-mission section > div {
     align-items: center;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 section#vision-and-mission section > div :first-child {

@@ -99,6 +99,8 @@ section#services-products > figure {
     display: flex;
     flex-direction: row;
     gap: 3rem;
+    min-width: 500px;
+    flex-wrap: wrap;
 }
 
 section#services-products > figure > * {
