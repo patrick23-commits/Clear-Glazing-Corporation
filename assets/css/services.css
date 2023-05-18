@@ -33,6 +33,7 @@ section#services-bg h1::before {
 }
 
 section#thumbnail {
+    padding-inline: 20px;
     width: 100vw;
     display: flex;
     height: 650px;

@@ -15,7 +15,7 @@ header {
     padding: 20px 0 !important;
 }
 
-.logo {
+header .logo {
     display: flex;
     align-items: center;
     max-width: 100%;
@@ -25,21 +25,21 @@ header {
     padding-left: 160px;
     
 }
-.logo > img {
+header .logo > img {
     height: 47.4px; width: 50px;
 }
-.logo h2 {
+header .logo h2 {
    
     font-size: 20px !important;
     gap: 0;
     line-height: 26px !important;
     height: 55px;
 }
-.logo h2 , .logo h2 * {
+header .logo h2 , header .logo h2 * {
     font-family: SairaCondensed-Bold;
 }
 
-.logo h2:nth-of-type(1){
+header .logo h2:nth-of-type(1){
     color: white !important;
 }   
 .active {
@@ -84,11 +84,11 @@ a {
     nav {
         justify-content: center;
     }
-    .logo {
+    header .logo {
         justify-content: center;
         padding-left: 0;
     }
-    .logo  > h2{
+    header .logo  > h2{
         font-size: 2rem !important;
         line-height: 2rem !important;
     }

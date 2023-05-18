@@ -189,7 +189,9 @@ section#testimonials > #reviews  > div > .stars svg path{
     fill: gray;
 }
 
+
 section#testimonials  #professionals {
+    margin-top: -7rem;
     width: 100%;
     display: flex;
     gap: 2rem;
@@ -201,6 +203,7 @@ section#testimonials  #professionals {
 
 @media screen and (max-width : 520px) {
     section#testimonials  #professionals {
+        margin-top: 0px;
         transform: none;
     }
     section#testimonials  > #professionals-descriptions {
@@ -317,9 +320,9 @@ section#vision-and-mission section > figure::before {
     content: "";
     top: 0;
     width: 30%;
-    height: 200px;
+    height: 70%;
     background-color: var(--active);
-    transform: translateY(-50px) translateX(-40%);
+    transform: translateY(-25%) translateX(-20%);
     z-index: 0;
     left: 0;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.55);
@@ -333,7 +336,7 @@ section#vision-and-mission section > figure::after {
     background-color: var(--active);
     z-index: 0;
     left: 100%;
-    transform: translateX(-60%);
+    transform: translateX(-70%);
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.55);
 }
 

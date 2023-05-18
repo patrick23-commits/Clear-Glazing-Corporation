@@ -9,6 +9,13 @@ footer {
     padding: 1.5rem 0 .75rem;
     max-width: 100vw;
 }
+footer > div.logo {
+    font-size: 20px;
+    line-height: 25px;
+    color: white;
+    display: flex;
+    justify-content: center !important;
+}
 
 footer a {
     font-family: SairaCondensed-Light;
