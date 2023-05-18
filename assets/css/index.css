@@ -232,6 +232,7 @@
     background-size: cover;
  }
  #mid-bg > h2 {
+    color: white;
     font-size: 36px;
     line-height: 36px;
     text-transform: uppercase;

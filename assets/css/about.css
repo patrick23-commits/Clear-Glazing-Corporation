@@ -282,10 +282,10 @@ section#vision-and-mission > section {
     margin-bottom: 50px;
     column-gap: 5rem;
     
-    min-width: 300px;
 }
 section#vision-and-mission section > * {
-    flex-basis: 50%;
+    flex-basis: 300px;
+    min-width: 300px;
 }
 section#vision-and-mission section:first-child {
     flex-direction: row-reverse;
