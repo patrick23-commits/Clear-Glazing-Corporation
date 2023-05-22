@@ -1,5 +1,5 @@
 * {
-    font-family: SairaCondensed-Bold;
+    font-family: Cabin-Bold;
 }
 section#about-bg {
     transform: translateY(-5px);
@@ -31,6 +31,9 @@ section#about-bg  > h1 {
     text-align: center;
     line-height: 4rem;
     text-shadow: 2px 3px 4px rgba(0, 0, 0, 0.67);
+}
+section#about-bg  > h1 , section#about-bg  > h1  *{
+    font-family: Cabin-Bold;
 }
 section#about-bg  > h2::before {
     content: "";
@@ -134,7 +137,6 @@ section#testimonials {
 }
 section#testimonials > h3{
     color: var(--active);
-    font-family: SairaCondensed-Light;
 }
 section#testimonials > h2{
     font-size: 3rem;
@@ -152,8 +154,11 @@ section#testimonials > #reviews {
     place-content: center;
 }
 section#testimonials > #reviews  > div > p{
-    font-family: SairaCondensed-Light;
+    
+    font-family: HindVadodara-Light;
+    line-height: 1.25rem;
     text-align: justify;
+    color: rgba(122, 123, 122, 1);
 }
 section#testimonials > #reviews  div > span{
     font-family: SairaCondensed-Bold;
@@ -252,7 +257,8 @@ section#testimonials  > #professionals-descriptions {
     flex-wrap: wrap;
 }
 section#testimonials > #professionals-descriptions > div  p {
-    font-family:  SairaCondensed-Light;
+    font-family: HindVadodara-Medium;
+    line-height: 1.25rem;
 }
 section#testimonials  > #professionals-descriptions > div {
     background-color: var(--bg);
@@ -295,7 +301,7 @@ section#vision-and-mission section:first-child {
 }
 
 section#vision-and-mission section > *  > h2 {
-    font-family: SairaCondensed-Bold;
+    font-family: Cabin-Bold;
     font-size: 3rem;
 }
 section#vision-and-mission section > *  > p {

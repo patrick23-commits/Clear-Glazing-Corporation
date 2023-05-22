@@ -1,5 +1,5 @@
 * {
-    font-family: SairaCondensed-Bold;
+    font-family: Roboto-Bold;
 }
 section#services-bg {
     width: 100vw !important;
@@ -97,13 +97,11 @@ section#services-products {
     flex-direction: column;
     row-gap: 5rem;
 }
-section#services-products img{
+section#services-products > figure > img{
     
-    flex-basis: 50%;
+    width: 40%;
     min-width: 300px;
     object-fit: cover;
-
-    aspect-ratio: 15 / 8;
     
 }
 section#services-products > figure figcaption {

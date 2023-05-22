@@ -17,6 +17,11 @@ footer > div.logo {
     justify-content: center !important;
 }
 
+footer > div.logo *{
+       
+    font-family: SairaCondensed-Bold ;
+}
+
 footer a {
     font-family: SairaCondensed-Light;
 }

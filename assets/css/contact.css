@@ -1,0 +1,153 @@
+* {
+    font-family: Roboto-Bold;
+    color: var(--font-main-color);
+}
+section#bg {
+    height: 100vh;
+    display: flex;
+}
+section#bg > div{
+    flex-basis: 60%;
+    background-image: url(../images/bg_contact.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#bg > div:nth-child(2) {
+    background-image: url(../images/contact_h1_bg.webp);
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 5%;
+    flex-grow: 0;
+    flex-basis: 40%;
+}
+section#bg > div > h1 {
+    font-size: 3rem;
+    position: relative;
+    padding-left: 1rem;
+}
+section#bg  h1::before {
+    content: "";
+    height: 100%;
+    width: 5px;
+    background-color: var(--active);
+}
+
+section#contact {
+    display: flex;
+    margin-top: 100px;
+    padding-inline: 5rem;
+    gap: 3rem;
+}
+section#contact > section#contact-informations{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+section#contact > section#contact-informations > div{
+    
+    display: flex;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    padding: 2rem 5rem;
+    gap: 2rem;
+    align-items: center;
+}
+section#contact > section#contact-informations > div > * {
+    cursor: default;
+}
+section#contact > section#contact-informations > div  svg *{
+    fill: var(--active);
+}
+
+section#contact > section#contact-informations > div h3{
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    font-family: SairaCondensed-Bold;
+}
+section#contact > section#contact-informations > div p{
+    font-family: SairaCondensed-Light;
+    font-size: 1rem;
+    line-height: 1rem;
+}
+section#contact > section#contact-informations > div p,
+section#contact > section#contact-informations > div h3,
+section#contact > section#contact-informations > div  svg *,
+section#contact > section#contact-informations > div > div.icon {
+    transition: all 500ms 25ms linear;
+}
+section#contact > section#contact-informations > div > div.icon {
+        border-radius: 50%;
+        padding: .75rem;
+        background-color: rgba(251, 127, 57, 0.14);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+
+section#contact > section#contact-informations > div:hover svg * {
+    fill: var(--font-main-color);
+} 
+section#contact > section#contact-informations > div:hover .icon {
+    background-color: rgba(5, 30, 40, 0.14);;
+}
+section#contact > section#contact-informations > div:hover h3,
+section#contact > section#contact-informations > div:hover p {
+    color: var(--active);
+}
+
+section#contact >  form {
+    width: 55%;
+    flex-grow: 0;
+    background: #FFFFFF;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    border-radius: 4px;
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+}
+section#contact form > h2 {
+    font-family: SairaCondensed-Bold;
+    font-size: 4rem;
+    line-height: 4rem;
+}
+section#contact >  form  span {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+}
+section#contact >  form  span, section#contact >  form #inputs >  *{
+    font-family: SairaCondensed-Light;
+}
+section#contact >  form #inputs {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 2rem;
+    justify-content: space-between;
+}
+section#contact >  form #inputs > * {
+    flex-basis: 45%;
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: 4px;
+    border: 1px solid #B0B0B0;
+    flex-shrink: 1;
+}
+section#contact >  form  textarea {
+    resize: none;
+    flex-grow: 1;
+}
+section#contact >  form  button {
+    background-color: var(--active);
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    font-family: Sarabun-Light;
+    cursor: pointer;
+    width: fit-content;
+
+    border-radius: 2px;
+}

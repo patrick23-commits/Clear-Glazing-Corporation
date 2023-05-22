@@ -22,7 +22,7 @@ header .logo {
     flex-grow: 3;
     
     justify-content: flex-start;
-    padding-left: 160px;
+    padding-left: 10%;
     
 }
 header .logo > img {

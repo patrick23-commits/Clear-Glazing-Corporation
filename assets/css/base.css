@@ -37,6 +37,21 @@
     font-family: Roboto-Light;
     src: url(../fonts/Roboto-Light.ttf);
 }
+
+@font-face {
+    font-family: Cabin-Bold;
+    src: url(../fonts/Cabin-Bold.ttf);
+}
+
+@font-face {
+    font-family: HindVadodara-Medium;
+    src: url(../fonts/HindVadodara-Medium.ttf);
+}
+
+@font-face {
+    font-family: HindVadodara-Light;
+    src: url(../fonts/HindVadodara-Light.ttf);
+}
 * {
     padding: 0;
     margin: 0;
